@@ -1,5 +1,5 @@
 div.container {
-  width: 39.1875rem;
+  width: 39.4375rem;
   max-width: 100%;
   margin: auto;
   display: flex;
@@ -22,6 +22,10 @@ div.container {
     margin-left: 0.25rem;
 
     cursor: pointer;
+
+    &:hover {
+      color: var(--color-brand-hover);
+    }
   }
 
   & h2 {
@@ -30,9 +34,34 @@ div.container {
     align-self: flex-start;
     margin-top: 1rem;
   }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 39.1875rem;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-danger);
+    border-radius: 0.75rem;
+    margin-top: 2.25rem;
+
+    & .footer-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font: var(--label);
+      color: var(--always-white);
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
 }
 
 form {
+  max-width: 39.1875rem;
   width: 100%;
   display: flex;
   flex-direction: column;
