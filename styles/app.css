@@ -36,7 +36,7 @@ div.container {
   }
 
   footer {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     max-width: 39.1875rem;
@@ -55,8 +55,8 @@ div.container {
     }
   }
 
-  .hidden {
-    display: none;
+  .show-alert {
+    display: flex;
   }
 }
 
