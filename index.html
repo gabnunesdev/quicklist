@@ -28,14 +28,18 @@
 
       <form>
         <div class="input-item">
-          <input type="text" placeholder="Adicione um novo item" />
-          <button type="submit">Adicionar item</button>
+          <input
+            id="itemInput"
+            type="text"
+            placeholder="Adicione um novo item"
+          />
+          <button id="addItemBtn" type="submit">Adicionar item</button>
         </div>
 
-        <ul>
+        <ul id="lista">
           <li>
             <div class="checkbox-group">
-              <input type="checkbox" name="" id="pao-forma" />
+              <input type="checkbox" name="item" id="pao-forma" />
               <label for="pao-forma">Pão de Forma</label>
             </div>
             <button class="btn-remove">
@@ -44,8 +48,8 @@
           </li>
           <li>
             <div class="checkbox-group">
-              <input type="checkbox" name="" id="pao-forma" />
-              <label for="pao-forma">Café Preto</label>
+              <input type="checkbox" name="item" id="cafe-preto" />
+              <label for="cafe-preto">Café Preto</label>
             </div>
             <button class="btn-remove">
               <img src="assets/icons/delete-icon.svg" alt="" />
@@ -53,8 +57,8 @@
           </li>
           <li>
             <div class="checkbox-group">
-              <input type="checkbox" name="" id="pao-forma" />
-              <label for="pao-forma">Suco de laranja</label>
+              <input type="checkbox" name="item" id="suco-laranja" />
+              <label for="suco-laranja">Suco de Laranja</label>
             </div>
             <button class="btn-remove">
               <img src="assets/icons/delete-icon.svg" alt="" />
@@ -62,7 +66,7 @@
           </li>
           <li>
             <div class="checkbox-group">
-              <input type="checkbox" name="" id="pao-forma" />
+              <input type="checkbox" name="item" id="bolacha" />
               <label for="pao-forma">Bolacha</label>
             </div>
             <button class="btn-remove">

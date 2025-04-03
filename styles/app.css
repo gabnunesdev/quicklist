@@ -61,14 +61,14 @@ div.container {
 }
 
 form {
-  max-width: 39.1875rem;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
   margin-left: 0.25rem;
 
   & .input-item {
+    max-width: 100%;
     display: flex;
     gap: 1rem;
     align-self: flex-start;
@@ -97,12 +97,16 @@ form {
     }
 
     & button {
+      max-width: 100%;
       all: unset;
       font: var(--label);
       color: var(--always-white);
       background-color: var(--color-brand);
       padding: 0.75rem 1.5rem;
       border-radius: 0.75rem;
+      text-align: center;
+
+      cursor: pointer;
 
       &:hover {
         background-color: var(--color-brand-hover);
@@ -172,5 +176,39 @@ form {
         align-self: flex-start;
       }
     }
+  }
+}
+
+@media (max-width: 768px) /* menor ou igual a */ {
+  div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 2rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  .input-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .input-item input {
+    max-width: 100%;
+  }
+
+  .input-item button {
+    max-width: 100%;
+  }
+
+  .checkbox-group {
+    max-width: 100%;
   }
 }
